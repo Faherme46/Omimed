@@ -19,6 +19,9 @@ class userController extends Controller
     public function detalle(){
         return view('Products/detail');
     }
+    public function televisor(){
+        return view('tv');
+    }
 
 
 }

@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [userController::class,'firstMethod']);
 
 
-Route::get('productos', [userController::class,'listProducts'] );
+Route::get('tv', [userController::class,'televisor'] );
 
 Route::get('productos/detalle', [userController::class,'detalle'] );
 
