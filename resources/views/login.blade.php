@@ -21,7 +21,7 @@
 
                 <div class="centrado">
                     <h2>Login</h2>
-                    <form method="POST" action="" >
+                    <form method="POST" action="login" >
                         @csrf
 
                         <div class="form-group">

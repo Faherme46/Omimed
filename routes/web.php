@@ -16,10 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [userController::class,'firstMethod']);
 Route::post('login', [PostController::class,'loguear']);
+Route::post('recepcion', [PostController::class,'ingresar']);
+
 
 Route::get('login', [userController::class,'firstMethod'] );
-Route::get('tv', [userController::class,'televisor'] );
+Route::get('tv', [userController::class,'televisor'] )->name('tv');;
 Route::get('doctores',[userController::class,'doctores'])->name('doctores');
+Route::get('recepcion',[userController::class,'recepcion'])->name('recepcion');
+Route::get('recepcion?cc={cc}&find={find}',[userController::class,'recepcion'])->name('recepcionV');
+
+
+
 
 Route::get('productos/detalle', [userController::class,'detalle'] );
 
@@ -30,4 +37,5 @@ Route::get('productos/{id}', function ($id) {
 Route::get('productos/{id}/{categoria}', function ($id,$categoria) {
     return "el nombre del producto es: $id con la categoria $categoria";
 });
+
 

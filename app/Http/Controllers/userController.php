@@ -19,5 +19,8 @@ class userController extends Controller
         return view('doctores');
     }
 
+    public function recepcion(){
+        return view('recepcion');
+    }
 
 }
