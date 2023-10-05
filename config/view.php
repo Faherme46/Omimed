@@ -27,6 +27,8 @@ return [
     | directory. However, as usual, you are free to change this value.
     |
     */
+    'default' => 'blade',
+
 
     'compiled' => env(
         'VIEW_COMPILED_PATH',

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-class MockController{
+class MockController extends Controller{
 
     public function getData($field){
         // URL de la API que deseas consumir

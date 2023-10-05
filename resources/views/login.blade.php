@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,9 @@
 
                 <div class="centrado">
                     <h2>Login</h2>
-                    <form action="login.php" method="POST">
+                    <form method="POST" action="" >
+                        @csrf
+
                         <div class="form-group">
 
                             <input type="text" class="form-control mt-5" id="username" name="username" placeholder="username" required>
@@ -41,19 +43,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
-</html> -->
+</html>
 
-
-<?php
-
-use App\Http\Controllers\MockController;
-use PhpParser\Node\Expr\Cast\Object_;
-
-
-    $controller= new MockController();
-    $dataUsers=$controller->getData("Users");
-
-    print_r($dataUsers);
 
 
 

@@ -15,14 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [userController::class,'firstMethod']);
+Route::post('login', [PostController::class,'loguear']);
 
-
+Route::get('login', [userController::class,'firstMethod'] );
 Route::get('tv', [userController::class,'televisor'] );
+Route::get('doctores',[userController::class,'doctores'])->name('doctores');
 
 Route::get('productos/detalle', [userController::class,'detalle'] );
-
-
-
 
 Route::get('productos/{id}', function ($id) {
     return "el nombre del producto es: $id";
