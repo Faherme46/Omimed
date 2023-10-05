@@ -14,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'HOME PAGE';
-});
+Route::get('/', [userController::class,'firstMethod']);
+
 
 Route::get('productos', [userController::class,'listProducts'] );
 

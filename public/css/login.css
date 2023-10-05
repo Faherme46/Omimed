@@ -1,0 +1,37 @@
+body {
+    /* Set the background image URL */
+    background-image: url('../img/backgd_login.jpg'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
+
+    /* Set background properties */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center center; /* Center the background image horizontally and vertically */
+    background-repeat: no-repeat; /* Do not repeat the image */
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* This centers the container vertically on the page */
+}
+
+.login-box {
+    vertical-align: bottom;
+    background-color: rgba(255, 255, 255, 0.8); /* 0.8 sets the opacity to 80% */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.div1{
+    color: #ff0000;
+}
+.centrado{
+text-align: center;
+}

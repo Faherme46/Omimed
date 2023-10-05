@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class userController extends Controller
 {
     //
+
+    public function firstMethod(){
+        return view("login");
+    }
     public function listProducts(){
 
         return view("Products/products");
@@ -15,4 +19,6 @@ class userController extends Controller
     public function detalle(){
         return view('Products/detail');
     }
+
+
 }
